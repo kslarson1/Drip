@@ -25,6 +25,8 @@ and Blueprint http://www.blueprintcss.org/
 >>> TABLE OF CONTENTS:
 ----------------------------------------------------------------
 1.0 Reset
+1.1 Bootstrap (added)
+1.2 Custom (added)
 2.0 Typography
 3.0 Elements
 4.0 Forms
@@ -51,6 +53,17 @@ and Blueprint http://www.blueprintcss.org/
 1.0 Reset
 --------------------------------------------------------------*/
 @import "reset";
+
+/*--------------------------------------------------------------
+1.1 Bootstrap
+--------------------------------------------------------------*/
+@import "bootstrap/bootstrap.min";
+@import "bootstrap/bootstrap-theme.min";
+
+/*--------------------------------------------------------------
+1.2 Custom
+--------------------------------------------------------------*/
+@import "custom/custom";
 
 /*--------------------------------------------------------------
 2.0 Typography
