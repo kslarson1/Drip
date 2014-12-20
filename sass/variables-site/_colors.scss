@@ -11,10 +11,18 @@ $color__text-input-focus: #111;
 $color__link: royalblue;
 $color__link-visited: purple;
 $color__link-hover: midnightblue;
-$color__text-main: #404040;
+
 
 $color__border-button: #ccc #ccc #bbb;
 $color__border-button-hover: #ccc #bbb #aaa;
 $color__border-button-focus: #aaa #bbb #bbb;
 $color__border-input: #ccc;
 $color__border-abbr: #666;
+
+/*COLORS ADDED*/
+$color__logo_first: #006CED;
+$color__logo_second: #4A4A4A;
+$color__logo_third: #fff;
+
+$color__text_main: #000;		/* Changed, moved from above*/
+$color__text_gray: #aaa;

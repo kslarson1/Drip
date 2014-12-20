@@ -45,6 +45,8 @@ and Blueprint http://www.blueprintcss.org/
 	12.1 Captions
 	12.2 Galleries
 --------------------------------------------------------------*/
+/*COLORS ADDED*/
+/* Changed, moved from above*/
 /*--------------------------------------------------------------
 1.0 Reset
 --------------------------------------------------------------*/
@@ -1656,7 +1658,7 @@ body, html, site-main {
 
 .flat_bg {
   min-height: 600px;
-  background-color: green; }
+  background-color: #006CED; }
 
 /*HOME SECTION*/
 #home {
@@ -1678,7 +1680,7 @@ button,
 input,
 select,
 textarea {
-  color: #404040;
+  color: #000;
   font-family: sans-serif;
   font-size: 16px;
   font-size: 1.6rem;

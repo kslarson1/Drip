@@ -15,3 +15,4 @@ function resizeDiv() {
 // Home page background image height
 $('.fixed_bg_home').css({'height': vph + 'px'});
 }
+
