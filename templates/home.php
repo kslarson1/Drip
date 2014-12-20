@@ -18,7 +18,7 @@ get_header(); ?>
 
 <!-- BEGIN HOME SECTION -->
 <div id="home">
-	<div class="fixed_bg">   <!-- FIXED IMAGE -->
+	<div class="fixed_bg_home" style="background-image: url(<?php the_field('home_bg_image'); ?>);">   <!-- FIXED IMAGE -->
 	<div class="container-fluid">
 	<div class="row">
 		<div class="col-xs-12 col-sm-6">
@@ -44,8 +44,8 @@ get_header(); ?>
 <!-- END OF HOME SECTION -->
 
 <!-- START OF SERVICES SECTION -->
-<div id="services">
-	<div class="fixed_bg">   <!-- FIXED IMAGE -->
+<div id="services">   
+	<div class="fixed_bg" style="background-image: url(<?php the_field('services_bg_image'); ?>);">   <!-- FIXED IMAGE -->
 	<div class="container-fluid">
 	<div class="row">
 		<div class="col-xs-12">
@@ -60,9 +60,21 @@ get_header(); ?>
 	<div class="flat_bg">
 	<div class="container-fluid">
 	<div class="row">
-	<div class="col-xs-12">
-		<p><?php the_field('services_text'); ?></p>
-	</div>
+		<div class="col-xs-12 col-sm-4">
+			<div class="services_box">
+dsfslakj
+			</div>
+		</div>
+		<div class="col-xs-12 col-sm-4">
+			<div class="services_box">
+dafssj;afs
+			</div>
+		</div>
+		<div class="col-xs-12 col-sm-4">
+			<div class="services_box">
+ef;alsjf;ld
+			</div>
+		</div>
 	</div>
 	</div>
 	</div>
@@ -72,13 +84,36 @@ get_header(); ?>
 
 <!-- START OF ABOUT SECTION -->
 <div id="about">
-<div class="container-fluid">
-<div class="row">
-<div class="col-xs-8 col-xs-offset-2">
-hi there
-</div>
-</div>
-</div>
+	<div class="fixed_bg" style="background-image: url(<?php the_field('about_bg_image'); ?>);">   <!-- FIXED IMAGE -->
+	<div class="container-fluid">
+	<div class="row">
+		<div class="col-xs-12">
+			<h1><?php the_field('about_header'); ?></h1>
+			<h4><?php the_field('about_subheader'); ?></h4>
+		</div>
+	</div>
+	</div>
+	</div>
+	<!-- START OF SCROLLING BREAK SECTION -->
+	<div class="flat_bg">
+	<div class="container-fluid">
+	<div class="row">
+		<div class="col-xs-12 col-sm-6">
+			<div class="circle">
+
+			</div>
+		</div>
+		<div class="col-xs-12 col-sm-6">
+			<ul class="about_list">
+				<li>Recommended book: Antifragile</li>
+				<li>Recommended book: Antifragile</li>
+				<li>Recommended book: Antifragile</li>
+			</ul>
+		</div>
+	</div>
+	</div>
+	</div>
+	<!-- END OF SCROLLING BREAK SECTION -->
 </div>
 <!-- END OF ABOUT SECTION -->
 
@@ -86,7 +121,7 @@ hi there
 <div id="contact">
 <div class="container-fluid">
 <div class="row">
-<div class="col-xs-8 col-xs-offset-2">
+<div class="col-xs-12">
 hi there
 </div>
 </div>

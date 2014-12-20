@@ -1,7 +1,41 @@
-.fixed_bg {
-	min-height: 100%;
+/*FIXED AND SCROLLING BACKGROUND IMAGES*/
+body, html, site-main {
+	height: 100%;
+}
+
+.fixed_bg_home {
 	background-size: cover;
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 	background-position: center center;
+	background-color: #fff;
+}
+
+.fixed_bg {
+	min-height: 500px;
+	background-size: cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-color: #fff;
+}
+
+.flat_bg {
+	min-height: 600px;
+	background-color: green;
+}
+
+/*HOME SECTION*/
+#home {
+	min-height: 100%;
+}
+
+/*SERVICES SECTION*/
+#services {
+	min-height: 700px;
+}
+
+/*ABOUT SECTION*/
+#about {
+	min-height: 700px;
 }
