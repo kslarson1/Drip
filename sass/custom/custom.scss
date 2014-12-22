@@ -48,18 +48,29 @@ hr {
 	background-image: -o-linear-gradient(left, rgba(0,108,237,0), rgba(0,108,237,0.75), rgba(0,108,237,0));
 }
 
-
 /*HOME SECTION*/
 #home {
 	min-height: 100%;
+	margin: -100px 0 0 0;
 	h1 {
 		font-size: 5em;
+		padding: 100px 0 0 150px;
 	}
 }
 
 /*SERVICES SECTION*/
 #services {
-	min-height: 700px;
+	min-height: 900px;
+	.fixed_bg {
+		min-height: 700px;
+	}
+	.flat_bg {
+		background-color: $color__logo_first;
+		color: #fff;
+	}
+	.ghost_button {
+		margin: 5em auto 0 auto;
+	}
 }
 
 .services_box {

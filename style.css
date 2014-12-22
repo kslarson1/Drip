@@ -1683,13 +1683,22 @@ hr {
 
 /*HOME SECTION*/
 #home {
-  min-height: 100%; }
+  min-height: 100%;
+  margin: -100px 0 0 0; }
   #home h1 {
-    font-size: 5em; }
+    font-size: 5em;
+    padding: 100px 0 0 150px; }
 
 /*SERVICES SECTION*/
 #services {
-  min-height: 700px; }
+  min-height: 900px; }
+  #services .fixed_bg {
+    min-height: 700px; }
+  #services .flat_bg {
+    background-color: #006CED;
+    color: #fff; }
+  #services .ghost_button {
+    margin: 5em auto 0 auto; }
 
 .services_box {
   width: 90%;
@@ -1849,43 +1858,48 @@ textarea {
   vertical-align: baseline;
   /* Improves appearance and consistency in all browsers */ }
 
-button,
-input[type="button"],
-input[type="reset"],
-input[type="submit"] {
-  border: 1px solid;
-  border-color: #ccc #ccc #bbb;
-  border-radius: 3px;
-  background: #e6e6e6;
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5), inset 0 15px 17px rgba(255, 255, 255, 0.5), inset 0 -5px 12px rgba(0, 0, 0, 0.05);
-  color: rgba(0, 0, 0, 0.8);
-  cursor: pointer;
-  /* Improves usability and consistency of cursor style between image-type 'input' and others */
-  -webkit-appearance: button;
-  /* Corrects inability to style clickable 'input' types in iOS */
-  font-size: 12px;
-  font-size: 1.2rem;
-  line-height: 1;
-  padding: .6em 1em .4em;
-  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8); }
+/*GHOST BUTTONS*/
+.ghost_button {
+  display: block;
+  width: 200px;
+  padding: 8px;
+  color: #fff;
+  border: 2px solid #fff;
+  text-align: center;
+  outline: none;
+  text-decoration: none;
+  transition: background-color 0.2s ease-out, border-color 0.2s ease-out; }
 
-button:hover,
-input[type="button"]:hover,
-input[type="reset"]:hover,
-input[type="submit"]:hover {
-  border-color: #ccc #bbb #aaa;
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8), inset 0 15px 17px rgba(255, 255, 255, 0.8), inset 0 -5px 12px rgba(0, 0, 0, 0.02); }
+.ghost_button:hover,
+.ghost_button:active {
+  color: #fff;
+  text-decoration: none;
+  background-color: #fff;
+  /* fallback */
+  background-color: rgba(255, 255, 255, 0.4);
+  border-color: #fff;
+  /* fallback */
+  border-color: rgba(255, 255, 255, 0.4);
+  transition: background-color 0.3s ease-in, border-color 0.3s ease-in; }
 
-button:focus,
-input[type="button"]:focus,
-input[type="reset"]:focus,
-input[type="submit"]:focus,
-button:active,
-input[type="button"]:active,
-input[type="reset"]:active,
-input[type="submit"]:active {
-  border-color: #aaa #bbb #bbb;
-  box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.5), inset 0 2px 5px rgba(0, 0, 0, 0.15); }
+/*GHOST BUTTONS IN NAVIGATION*/
+.nav_ghost_button {
+  width: 200px;
+  padding: 8px;
+  color: #fff;
+  text-align: center;
+  outline: none;
+  text-decoration: none;
+  transition: background-color 0.2s ease-out; }
+
+.nav_ghost_button:hover,
+.nav_ghost_button:active {
+  color: #fff;
+  text-decoration: none;
+  background-color: #fff;
+  /* fallback */
+  background-color: rgba(255, 255, 255, 0.4);
+  transition: background-color 0.3s ease-in; }
 
 input[type="checkbox"],
 input[type="radio"] {
@@ -1948,41 +1962,29 @@ textarea {
 --------------------------------------------------------------*/
 a {
   color: royalblue; }
-  a:visited {
-    color: purple; }
-  a:hover, a:focus, a:active {
-    color: midnightblue; }
 
 /*--------------------------------------------------------------
 5.2 Menus
 --------------------------------------------------------------*/
+.site-header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 99;
+  width: 100%;
+  height: 44px;
+  background-color: rgba(200, 200, 200, 0.5); }
+
 .main-navigation {
   clear: both;
   display: block;
-  float: left;
   width: 100%; }
   .main-navigation ul {
     list-style: none;
-    margin: 0;
-    padding-left: 0; }
-    .main-navigation ul ul {
-      box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
-      float: left;
-      position: absolute;
-      top: 1.5em;
-      left: -999em;
-      z-index: 99999; }
-      .main-navigation ul ul ul {
-        left: -999em;
-        top: 0; }
-      .main-navigation ul ul li:hover > ul {
-        left: 100%; }
-      .main-navigation ul ul a {
-        width: 200px; }
-    .main-navigation ul li:hover > ul {
-      left: auto; }
+    margin: 0; }
   .main-navigation li {
-    float: left;
+    float: right;
     position: relative; }
   .main-navigation a {
     display: block;
@@ -1998,25 +2000,16 @@ a {
     display: block; }
 
   .main-navigation ul {
-    display: none; } }
+    display: none; }
+
+  .nav_ghost_button {
+    width: 200px;
+    background-color: blue; } }
 .site-main .comment-navigation,
 .site-main .paging-navigation,
 .site-main .post-navigation {
   margin: 0 0 1.5em;
   overflow: hidden; }
-
-.comment-navigation .nav-previous,
-.paging-navigation .nav-previous,
-.post-navigation .nav-previous {
-  float: left;
-  width: 50%; }
-
-.comment-navigation .nav-next,
-.paging-navigation .nav-next,
-.post-navigation .nav-next {
-  float: right;
-  text-align: right;
-  width: 50%; }
 
 /*--------------------------------------------------------------
 6.0 Accessibility
@@ -2114,7 +2107,7 @@ a {
   display: block; }
 
 .hentry {
-  margin: 0 0 1.5em; }
+  margin: 0; }
 
 .byline,
 .updated:not(.published) {
@@ -2127,11 +2120,11 @@ a {
 .page-content,
 .entry-content,
 .entry-summary {
-  margin: 1.5em 0 0; }
+  margin: 0; }
 
 .page-links {
   clear: both;
-  margin: 0 0 1.5em; }
+  margin: 0; }
 
 /*--------------------------------------------------------------
 10.2 Asides

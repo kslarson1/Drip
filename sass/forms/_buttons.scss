@@ -1,37 +1,43 @@
-button,
-input[type="button"],
-input[type="reset"],
-input[type="submit"] {
-	border: 1px solid;
-	border-color: $color__border-button;
-	border-radius: 3px;
-	background: $color__background-button;
-	box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5), inset 0 15px 17px rgba(255, 255, 255, 0.5), inset 0 -5px 12px rgba(0, 0, 0, 0.05);
-	color: rgba(0, 0, 0, .8);
-	cursor: pointer; /* Improves usability and consistency of cursor style between image-type 'input' and others */
-	-webkit-appearance: button; /* Corrects inability to style clickable 'input' types in iOS */
-	@include font-size(1.2);
-	line-height: 1;
-	padding: .6em 1em .4em;
-	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
+/*GHOST BUTTONS*/
+.ghost_button {
+  display: block;
+  width: 200px;
+  padding: 8px;
+  color: #fff;
+  border: 2px solid #fff;
+  text-align: center;
+  outline: none;
+  text-decoration: none;
+  transition: background-color 0.2s ease-out,
+              border-color 0.2s ease-out;
+}
+.ghost_button:hover,
+.ghost_button:active {
+	color: #fff;
+	text-decoration: none;
+	background-color: #fff; /* fallback */
+	background-color: rgba(255, 255, 255, 0.4);
+	border-color: #fff; /* fallback */
+	border-color: rgba(255, 255, 255, 0.4);
+		transition: background-color 0.3s ease-in,
+              border-color 0.3s ease-in;
 }
 
-button:hover,
-input[type="button"]:hover,
-input[type="reset"]:hover,
-input[type="submit"]:hover {
-	border-color: $color__border-button-hover;
-	box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8), inset 0 15px 17px rgba(255, 255, 255, 0.8), inset 0 -5px 12px rgba(0, 0, 0, 0.02);
+/*GHOST BUTTONS IN NAVIGATION*/
+.nav_ghost_button {
+  width: 200px;
+  padding: 8px;
+  color: #fff;
+  text-align: center;
+  outline: none;
+  text-decoration: none;
+  transition: background-color 0.2s ease-out;
 }
-
-button:focus,
-input[type="button"]:focus,
-input[type="reset"]:focus,
-input[type="submit"]:focus,
-button:active,
-input[type="button"]:active,
-input[type="reset"]:active,
-input[type="submit"]:active {
-	border-color: $color__border-button-focus;
-	box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.5), inset 0 2px 5px rgba(0, 0, 0, 0.15);
+.nav_ghost_button:hover,
+.nav_ghost_button:active {
+	color: #fff;
+	text-decoration: none;
+	background-color: #fff; /* fallback */
+	background-color: rgba(255, 255, 255, 0.4);
+		transition: background-color 0.3s ease-in;
 }

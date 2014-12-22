@@ -24,6 +24,7 @@ get_header(); ?>
 		<div class="col-xs-12 col-sm-6">
 			<h1><?php the_field('home_header'); ?></h1>
 			<h2><?php the_field('home_subheader'); ?></h2>
+			<a class="ghost_button" href="#about">Contact Me</a>
 		</div>
 	</div>
 	</div>
@@ -79,9 +80,14 @@ get_header(); ?>
 				<h2><?php the_field('servicesbox_header_3'); ?></h2>
 				</div>
 				<hr>
-				<p><?php the_field('servicesbox_text_3'); ?></p>
+				<p><?php the_field('servicesbox_text_3'); ?></p>		
 			</div>
 		</div>
+	</div>
+	<div class="row">
+	<div class="col-xs-12">
+		<a class="ghost_button" href="#about">Contact Me</a>
+	</div>
 	</div>
 	</div>
 	</div>

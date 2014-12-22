@@ -1,1 +1,1 @@
-function resizeDiv(){vpw=$(window).width(),vph=$(window).height(),headerH=$("#masthead").height(),cirW=$(".circle").width(),$(".circle").css({height:cirW+"px"})}$(document).ready(function(){resizeDiv()}),window.onresize=function(i){resizeDiv()};
+function resizeDiv(){vpw=$(window).width(),vph=$(window).height(),headerH=$("#masthead").height(),cirW=$(".circle").width(),$(".circle").css({height:cirW+"px"}),$(".fixed_bg_home").css({height:vph+"px"})}$(document).ready(function(){resizeDiv()}),window.onresize=function(i){resizeDiv()};

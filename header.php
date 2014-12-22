@@ -9,7 +9,6 @@
 ?><!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>
-
 <link href='http://fonts.googleapis.com/css?family=Lato:100,300|Roboto+Slab:300,400' rel='stylesheet' type='text/css'>    <!-- Add Google Fonts -->
 <meta charset="<?php bloginfo( 'charset' ); ?>">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -24,14 +23,18 @@
 	<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'drip' ); ?></a>
 
 	<header id="masthead" class="site-header" role="banner">
-		<div class="site-branding">
-			
-		</div><!-- .site-branding -->
-
-		<nav id="site-navigation" class="main-navigation" role="navigation">
-			<button class="menu-toggle" aria-controls="menu" aria-expanded="false"><?php _e( 'Primary Menu', 'drip' ); ?></button>
-			
-		</nav><!-- #site-navigation -->
+	<div class="container-fluid">
+		<div class="row">
+			<nav id="site-navigation" class="main-navigation" role="navigation">
+			<button class="menu-toggle"><?php _e( 'Menu', 'Drip' ); ?></button>
+			<ul>
+				<li><h3><a class="nav_ghost_button" href="#home">Home</a></h3></li>
+				<li><h3><a class="nav_ghost_button" href="#services">Services</a></h3></li>
+				<li><h3><a class="nav_ghost_button" href="#about">About</a></h3></li>
+			</ul>
+			</nav><!-- #site-navigation -->
+		</div>
+	</div>
 	</header><!-- #masthead -->
 
 	<div id="content" class="site-content">
