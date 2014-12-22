@@ -3,10 +3,17 @@ button,
 input,
 select,
 textarea {
-	color: $color__text_main;
+	color: $color__text_gray;
 	font-family: $font__main;
+	font-weight: 300;			/*Added to reduce font weight*/
 	@include font-size(1.6);
 	line-height: $font__line-height-body;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: $font__second;
+	font-weight: 300;
+	color: #000;
 }
 
 @import "headings";

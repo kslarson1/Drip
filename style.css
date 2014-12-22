@@ -47,6 +47,8 @@ and Blueprint http://www.blueprintcss.org/
 --------------------------------------------------------------*/
 /*COLORS ADDED*/
 /* Changed, moved from above*/
+/* Google Fonts */
+/* Google Fonts */
 /*--------------------------------------------------------------
 1.0 Reset
 --------------------------------------------------------------*/
@@ -60,7 +62,6 @@ fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td {
   border: 0;
   font-family: inherit;
-  font-size: 100%;
   font-style: inherit;
   font-weight: inherit;
   margin: 0;
@@ -1639,7 +1640,9 @@ hr {
 --------------------------------------------------------------*/
 /*FIXED AND SCROLLING BACKGROUND IMAGES*/
 body, html, site-main {
-  height: 100%; }
+  height: 100%;
+  margin: 0;
+  padding: 0; }
 
 .fixed_bg_home {
   background-size: cover;
@@ -1657,20 +1660,58 @@ body, html, site-main {
   background-color: #fff; }
 
 .flat_bg {
-  min-height: 600px;
-  background-color: #006CED; }
+  min-height: 400px;
+  background-color: #ebebeb;
+  padding: 6em 0 0 0; }
+
+/*MISCELLANEOUS*/
+.font_light {
+  font-weight: 100; }
+
+.center {
+  text-align: center; }
+
+hr {
+  border: 0;
+  height: 1px;
+  margin: 1em auto 1em auto;
+  width: 15em;
+  background-image: -webkit-linear-gradient(left, rgba(0, 108, 237, 0), rgba(0, 108, 237, 0.75), rgba(0, 108, 237, 0));
+  background-image: -moz-linear-gradient(left, rgba(0, 108, 237, 0), rgba(0, 108, 237, 0.75), rgba(0, 108, 237, 0));
+  background-image: -ms-linear-gradient(left, rgba(0, 108, 237, 0), rgba(0, 108, 237, 0.75), rgba(0, 108, 237, 0));
+  background-image: -o-linear-gradient(left, rgba(0, 108, 237, 0), rgba(0, 108, 237, 0.75), rgba(0, 108, 237, 0)); }
 
 /*HOME SECTION*/
 #home {
   min-height: 100%; }
+  #home h1 {
+    font-size: 5em; }
 
 /*SERVICES SECTION*/
 #services {
   min-height: 700px; }
 
+.services_box {
+  width: 90%;
+  margin: auto;
+  padding: 1em;
+  background-color: rgba(20, 20, 20, 0.5);
+  color: #fff;
+  min-height: 275px; }
+
 /*ABOUT SECTION*/
 #about {
   min-height: 700px; }
+
+.circle {
+  width: 100%;
+  max-width: 450px;
+  min-height: 250px;
+  margin: 0 auto 0 auto;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: none; }
 
 /*--------------------------------------------------------------
 2.0 Typography
@@ -1680,11 +1721,18 @@ button,
 input,
 select,
 textarea {
-  color: #000;
-  font-family: sans-serif;
+  color: #7a7a7a;
+  font-family: Roboto Slab, serif;
+  font-weight: 300;
+  /*Added to reduce font weight*/
   font-size: 16px;
   font-size: 1.6rem;
   line-height: 1.5; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: Lato, sans-serif;
+  font-weight: 300;
+  color: #000; }
 
 h1, h2, h3, h4, h5, h6 {
   clear: both; }
@@ -1693,7 +1741,7 @@ p {
   margin-bottom: 1.5em; }
 
 b, strong {
-  font-weight: bold; }
+  font-weight: 400; }
 
 dfn, cite, em, i {
   font-style: italic; }
@@ -1751,12 +1799,6 @@ big {
 /*--------------------------------------------------------------
 3.0 Elements
 --------------------------------------------------------------*/
-hr {
-  background-color: #ccc;
-  border: 0;
-  height: 1px;
-  margin-bottom: 1.5em; }
-
 ul, ol {
   margin: 0 0 1.5em 3em; }
 

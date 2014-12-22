@@ -12,7 +12,10 @@ function resizeDiv() {
   headerH = $('#masthead').height();
 
 // Your Styles
-// Home page background image height
-$('.fixed_bg_home').css({'height': vph + 'px'});
-}
+// Make height equal width for .circle //
 
+ cirW = $('.circle').width();
+
+    $('.circle').css({'height': cirW + 'px'});
+
+}
