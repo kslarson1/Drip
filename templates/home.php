@@ -12,9 +12,7 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
-			<?php while ( have_posts() ) : the_post(); ?>
-
-				<?php get_template_part( 'content', 'page' ); ?>
+			<?php while ( have_posts() ) : the_post(); ?>	
 
 <!-- BEGIN HOME SECTION -->
 <div id="home">
@@ -122,16 +120,9 @@ get_header(); ?>
 	<div class="flat_bg">
 	<div class="container-fluid">
 	<div class="row">
-		<div class="col-xs-12 col-sm-6">
+		<div class="col-xs-12">
 			<div class="circle" style="background-image: url(<?php the_field('about_image'); ?>)">
 			</div>
-		</div>
-		<div class="col-xs-12 col-sm-6">
-			<ul class="about_list">
-				<li>Recommended book: Antifragile</li>
-				<li>Recommended book: Antifragile</li>
-				<li>Recommended book: Antifragile</li>
-			</ul>
 		</div>
 	</div>
 	</div>
@@ -144,9 +135,7 @@ get_header(); ?>
 <div id="contact">
 <div class="container-fluid">
 <div class="row">
-<div class="col-xs-12">
-hi there
-</div>
+<?php echo do_shortcode('[contact-form-7 id="5" title="Contact form 1"]'); ?>
 </div>
 </div>
 </div>

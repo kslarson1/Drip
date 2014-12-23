@@ -1657,12 +1657,13 @@ body, html, site-main {
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: center center;
-  background-color: #fff; }
+  background-color: #fff;
+  padding: 5em 0; }
 
 .flat_bg {
   min-height: 400px;
   background-color: #ebebeb;
-  padding: 6em 0 0 0; }
+  padding: 5em 0; }
 
 /*MISCELLANEOUS*/
 .font_light {
@@ -1721,6 +1722,38 @@ hr {
   background-size: cover;
   background-position: center;
   background-repeat: none; }
+
+/*CONTACT SECTION*/
+#contact {
+  min-height: 400px;
+  padding: 5em 0; }
+
+/*CONTACT FORM 7*/
+.wpcf7 input[type="text"],
+input[type="email"],
+textarea {
+  background-color: #7a7a7a; }
+
+.wpcf7 {
+  color: #000; }
+
+.wpcf7_ghost_button {
+  display: block;
+  width: 200px;
+  padding: 8px;
+  color: #000;
+  border: 2px solid #006CED;
+  text-align: center;
+  outline: none;
+  text-decoration: none;
+  transition: background-color 0.2s ease-out, border-color 0.2s ease-out; }
+
+.wpcf7_ghost_button:hover,
+.wpcf7_ghost_button:active {
+  color: #fff;
+  text-decoration: none;
+  background-color: #006CED;
+  transition: background-color 0.3s ease-in; }
 
 /*--------------------------------------------------------------
 2.0 Typography

@@ -19,5 +19,5 @@ function resizeDiv() {
     $('.circle').css({'height': cirW + 'px'});
 
 // Home page background image height
-$('.fixed_bg_home').css({'height': vph + 'px'});
+$('.fixed_bg_home').css({'height': vph + 100 + 'px'});
 }
