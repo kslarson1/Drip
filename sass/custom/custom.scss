@@ -106,15 +106,21 @@ hr {
 }
 
 /*CONTACT FORM 7*/
-.wpcf7 input[type="text"],
-		input[type="email"],
-		textarea
-	 {
-	background-color: $color__text_gray;
-}
 
 .wpcf7 {
 	color: #000;
+		input[type="text"],
+		input[type="email"],
+		textarea {
+		background-color: $color__text_gray;
+		max-height: 200px;
+		max-width: 100%;
+	}
+
+}
+
+.wpcf7 input[type="submit"] {
+	margin: 0 auto;
 }
 
 .wpcf7_ghost_button {
@@ -134,5 +140,6 @@ hr {
 	color: #fff;
 	text-decoration: none;
 	background-color: $color__logo_first;
-		transition: background-color 0.3s ease-in;
+		transition: background-color 0.3s ease-in,
+			color .3s ease-in;
 }

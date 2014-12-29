@@ -26,7 +26,7 @@
 	<div class="container-fluid">
 		<div class="row">
 			<nav id="site-navigation" class="main-navigation" role="navigation">
-			<button class="menu-toggle"><?php _e( 'Menu', 'Drip' ); ?></button>
+			<button class="menu-toggle"><?php _e( 'M', 'Drip' ); ?></button>
 			<ul>
 				<li><h3><a class="nav_ghost_button" href="#home">Home</a></h3></li>
 				<li><h3><a class="nav_ghost_button" href="#services">Services</a></h3></li>

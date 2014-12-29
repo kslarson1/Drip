@@ -134,7 +134,7 @@ get_header(); ?>
 <!-- START OF CONTACT SECTION -->
 <div id="contact">
 <div class="container-fluid">
-<div class="row">
+<div class="row center">
 <?php echo do_shortcode('[contact-form-7 id="5" title="Contact form 1"]'); ?>
 </div>
 </div>

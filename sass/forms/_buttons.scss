@@ -27,17 +27,21 @@
 .nav_ghost_button {
   width: 200px;
   padding: 8px;
-  color: #fff;
+  color: $color__logo_first;
+  border: 1px none transparent;
   text-align: center;
   outline: none;
   text-decoration: none;
-  transition: background-color 0.2s ease-out;
+  transition: background-color 0.2s ease-out,
+  border-color .3s ease-out;
 }
 .nav_ghost_button:hover,
 .nav_ghost_button:active {
-	color: #fff;
+	color: $color__logo_first;
+  border: 1px solid $color__logo_first;
 	text-decoration: none;
 	background-color: #fff; /* fallback */
 	background-color: rgba(255, 255, 255, 0.4);
-		transition: background-color 0.3s ease-in;
+		transition: background-color 0.3s ease-in,
+    border-color .3s ease-in;
 }
