@@ -54,8 +54,12 @@ hr {
 	min-height: 100%;
 	margin: -100px 0 0 0;
 	h1 {
+		padding: 160px 0 0 0;
 		font-size: 5em;
-		padding: 100px 0 0 150px;
+	}
+	.ghost_button {
+		color: #000;
+		border: 1px solid #000;
 	}
 }
 
@@ -86,6 +90,12 @@ hr {
 /*ABOUT SECTION*/
 #about {
 	min-height: 700px;
+	h5 {
+		color: #000;
+	@media screen and (max-width: 800px) {
+		background-color: rgba(230,230,230,.6);
+		}
+	}
 }
 
 .circle {

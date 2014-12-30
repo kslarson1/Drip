@@ -28,9 +28,9 @@
 			<nav id="site-navigation" class="main-navigation" role="navigation">
 			<button class="menu-toggle"><?php _e( 'M', 'Drip' ); ?></button>
 			<ul>
-				<li><h3><a class="nav_ghost_button" href="#home">Home</a></h3></li>
-				<li><h3><a class="nav_ghost_button" href="#services">Services</a></h3></li>
-				<li><h3><a class="nav_ghost_button" href="#about">About</a></h3></li>
+				<li><h4><a class="nav_ghost_button" href="#home">Home</a></h4></li>
+				<li><h4><a class="nav_ghost_button" href="#services">Services</a></h4></li>
+				<li><h4><a class="nav_ghost_button" href="#about">About</a></h4></li>
 			</ul>
 			</nav><!-- #site-navigation -->
 		</div>

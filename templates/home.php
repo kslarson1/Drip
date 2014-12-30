@@ -19,10 +19,10 @@ get_header(); ?>
 	<div class="fixed_bg_home" style="background-image: url(<?php the_field('home_bg_image'); ?>);">   <!-- FIXED IMAGE -->
 	<div class="container-fluid">
 	<div class="row">
-		<div class="col-xs-12 col-sm-6">
+		<div class="col-xs-12 col-sm-4 col-sm-offset-1">
 			<h1><?php the_field('home_header'); ?></h1>
-			<h2><?php the_field('home_subheader'); ?></h2>
-			<a class="ghost_button" href="#about">Contact Me</a>
+				<h3><?php the_field('home_subheader'); ?></h3>
+				<br>
 		</div>
 	</div>
 	</div>
@@ -53,11 +53,14 @@ get_header(); ?>
 			<h1><?php the_field('services_header'); ?></h1>
 		</div>
 	</div>
+	<br>
+	<br>
+	<br>
 	<div class="row">
 	<div class="col-xs-12 col-sm-4">
 			<div class="services_box">
 				<div class="center">
-				<h2><?php the_field('servicesbox_header_1'); ?></h2>
+				<h3><?php the_field('servicesbox_header_1'); ?></h3>
 				</div>
 				<hr>
 				<p><?php the_field('servicesbox_text_1'); ?></p>
@@ -66,7 +69,7 @@ get_header(); ?>
 		<div class="col-xs-12 col-sm-4">
 			<div class="services_box">
 				<div class="center">
-				<h2><?php the_field('servicesbox_header_2'); ?></h2>
+				<h3><?php the_field('servicesbox_header_2'); ?></h3>
 				</div>
 				<hr>
 				<p><?php the_field('servicesbox_text_2'); ?></p>
@@ -75,7 +78,7 @@ get_header(); ?>
 		<div class="col-xs-12 col-sm-4">
 			<div class="services_box">
 				<div class="center">
-				<h2><?php the_field('servicesbox_header_3'); ?></h2>
+				<h3><?php the_field('servicesbox_header_3'); ?></h3>
 				</div>
 				<hr>
 				<p><?php the_field('servicesbox_text_3'); ?></p>		
@@ -109,9 +112,9 @@ get_header(); ?>
 	<div class="fixed_bg" style="background-image: url(<?php the_field('about_bg_image'); ?>);">   <!-- FIXED IMAGE -->
 	<div class="container-fluid">
 	<div class="row">
-		<div class="col-xs-12 col-sm-6 col-sm-offset-4">
+		<div class="col-xs-12 col-sm-5 col-sm-offset-6">
 			<h1><?php the_field('about_header'); ?></h1>
-			<h3><?php the_field('about_subheader'); ?></h3>
+			<h5><?php the_field('about_subheader'); ?></h5>
 		</div>
 	</div>
 	</div>
