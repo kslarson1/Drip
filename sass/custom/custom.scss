@@ -11,6 +11,11 @@ body, html, site-main {
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-color: #fff;
+	i {
+		position: absolute;
+		bottom: -400px;
+		color: #000;
+	}
 }
 
 .fixed_bg {
@@ -24,7 +29,7 @@ body, html, site-main {
 }
 
 .flat_bg {
-	min-height: 400px;
+	min-height: 300px;
 	background-color: $color__section_flat;
 	padding: 5em 0;
 }
@@ -82,9 +87,10 @@ hr {
 	width: 90%;
 	margin: auto;
 	padding: 1em;
-	background-color: rgba(20,20,20,.5);
+	background-color: rgba(100,100,100,.4);
 	color: #fff;
 	min-height: 275px;
+
 }
 
 /*ABOUT SECTION*/
@@ -113,6 +119,9 @@ hr {
 #contact {
 	min-height: 400px;
 	padding: 5em 0;
+	h2 {
+		padding: 0 0 1.5em 0;
+	}
 }
 
 /*CONTACT FORM 7*/

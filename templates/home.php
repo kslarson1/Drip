@@ -22,7 +22,6 @@ get_header(); ?>
 		<div class="col-xs-12 col-sm-4 col-sm-offset-1">
 			<h1><?php the_field('home_header'); ?></h1>
 				<h3><?php the_field('home_subheader'); ?></h3>
-				<br>
 		</div>
 	</div>
 	</div>
@@ -57,13 +56,13 @@ get_header(); ?>
 	<br>
 	<br>
 	<div class="row">
-	<div class="col-xs-12 col-sm-4">
+		<div class="col-xs-12 col-sm-4">
 			<div class="services_box">
 				<div class="center">
-				<h3><?php the_field('servicesbox_header_1'); ?></h3>
+					<h3><?php the_field('servicesbox_header_1'); ?></h3>
 				</div>
 				<hr>
-				<p><?php the_field('servicesbox_text_1'); ?></p>
+					<p><?php the_field('servicesbox_text_1'); ?></p>
 			</div>
 		</div>
 		<div class="col-xs-12 col-sm-4">
@@ -86,9 +85,9 @@ get_header(); ?>
 		</div>
 	</div>
 	<div class="row">
-	<div class="col-xs-12">
-		<a class="ghost_button" href="#about">Contact Me</a>
-	</div>
+		<div class="col-xs-12">
+			<a class="ghost_button" href="#contact">Contact Me</a>
+		</div>
 	</div>
 	</div>
 	</div>
@@ -114,7 +113,7 @@ get_header(); ?>
 	<div class="row">
 		<div class="col-xs-12 col-sm-5 col-sm-offset-6">
 			<h1><?php the_field('about_header'); ?></h1>
-			<h5><?php the_field('about_subheader'); ?></h5>
+			<h6><?php the_field('about_subheader'); ?></h6>
 		</div>
 	</div>
 	</div>
@@ -123,9 +122,43 @@ get_header(); ?>
 	<div class="flat_bg">
 	<div class="container-fluid">
 	<div class="row">
-		<div class="col-xs-12">
+		<div class="col-xs-12 col-md-6">
 			<div class="circle" style="background-image: url(<?php the_field('about_image'); ?>)">
 			</div>
+		</div>
+		<div class="col-xs-12 col-md-6">
+			<div class="center">
+			<h3>A list about me and Denver</h3>
+			<hr>
+			</div>
+			<ul>
+					<!-- START OF REPEATER -->
+					<?php
+
+// check if the repeater field has rows of data
+if( have_rows('about_list') ):
+
+ 	// loop through the rows of data
+
+    while ( have_rows('about_list') ) : the_row(); ?>
+
+       <!--  display a sub field value -->
+
+        <li><?php the_sub_field('list_item'); ?></li>
+	<?php
+    endwhile;
+
+else :
+
+    // no rows found
+
+endif;
+
+?>
+			<!-- END OF REPEATER -->
+
+				
+			</ul>
 		</div>
 	</div>
 	</div>
@@ -137,6 +170,11 @@ get_header(); ?>
 <!-- START OF CONTACT SECTION -->
 <div id="contact">
 <div class="container-fluid">
+<div class="row">
+	<div class="col-xs-12 center">
+		<h2><?php the_field('contact_header'); ?></h2>
+	</div>
+</div>
 <div class="row center">
 <?php echo do_shortcode('[contact-form-7 id="5" title="Contact form 1"]'); ?>
 </div>
