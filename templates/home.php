@@ -31,11 +31,11 @@ get_header(); ?>
 	<div class="flat_bg">
 	<div class="container-fluid">
 	<div class="row">
-	<div class="col-xs-12 col-md-8 col-md-offset-2 center">
-		<h3><?php the_field('home_subheader_1'); ?></h3>
-		<hr>
-		<p><?php the_field('home_text'); ?></p>
-	</div>
+		<div class="col-xs-12 col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3 center">
+			<h3><?php the_field('home_subheader_1'); ?></h3>
+			<hr>
+			<p><?php the_field('home_text'); ?></p>
+		</div>
 	</div>
 	</div>
 	</div>
@@ -52,7 +52,6 @@ get_header(); ?>
 			<h1><?php the_field('services_header'); ?></h1>
 		</div>
 	</div>
-	<br>
 	<br>
 	<br>
 	<div class="row">
@@ -86,7 +85,7 @@ get_header(); ?>
 	</div>
 	<div class="row">
 		<div class="col-xs-12">
-			<a class="ghost_button" href="#contact">Contact Me</a>
+			<a class="ghost_button" href="#about">Contact Me</a>
 		</div>
 	</div>
 	</div>
@@ -96,7 +95,7 @@ get_header(); ?>
 	<div class="flat_bg">
 	<div class="container-fluid">
 	<div class="row">
-		<div class="col-xs-12 center">
+		<div class="col-xs-12 col-lg-6 col-lg-offset-3 center">
 			<p><?php the_field('services_subheader'); ?></p>
 		</div>
 	</div>
@@ -106,7 +105,7 @@ get_header(); ?>
 </div>
 <!-- END OF SERVICES SECTION -->
 
-<!-- START OF ABOUT SECTION -->
+<!-- START OF ABOUT/CONTACT SECTION -->
 <div id="about">
 	<div class="fixed_bg" style="background-image: url(<?php the_field('about_bg_image'); ?>);">   <!-- FIXED IMAGE -->
 	<div class="container-fluid">
@@ -119,16 +118,17 @@ get_header(); ?>
 	</div>
 	</div>
 	<!-- START OF SCROLLING BREAK SECTION -->
-	<div class="flat_bg">
+	<div class="flat_bg_half1">
 	<div class="container-fluid">
-	<div class="row">
-		<div class="col-xs-12 col-md-6">
-			<div class="circle" style="background-image: url(<?php the_field('about_image'); ?>)">
+		<div class="row">
+			<div class="col-xs-12">
+				<div class="circle" style="background-image: url(<?php the_field('about_image'); ?>)">
+				</div>
 			</div>
 		</div>
-		<div class="col-xs-12 col-md-6">
+		<div class="col-xs-12">
 			<div class="center">
-			<h3>A list about me and Denver</h3>
+			<h2><?php the_field('list_header'); ?></h2>
 			<hr>
 			</div>
 			<ul>
@@ -156,31 +156,30 @@ endif;
 
 ?>
 			<!-- END OF REPEATER -->
-
-				
 			</ul>
 		</div>
 	</div>
 	</div>
+	<!-- END OF ABOUT HALF -->
+
+	<!-- START OF CONTACT HALF -->
+	<div class="flat_bg_half2">
+	<div class="container-fluid">
+	<div class="row">
+		<div class="col-xs-12 center">
+			<h2><?php the_field('contact_header'); ?></h2>
+		</div>
 	</div>
-	<!-- END OF SCROLLING BREAK SECTION -->
+	<div class="row">
+	<?php echo do_shortcode('[contact-form-7 id="5" title="Contact form 1"]'); ?>
+	</div>
+	</div>
+	</div>
+<!-- END OF CONTACT HALF -->
 </div>
 <!-- END OF ABOUT SECTION -->
 
-<!-- START OF CONTACT SECTION -->
-<div id="contact">
-<div class="container-fluid">
-<div class="row">
-	<div class="col-xs-12 center">
-		<h2><?php the_field('contact_header'); ?></h2>
-	</div>
-</div>
-<div class="row center">
-<?php echo do_shortcode('[contact-form-7 id="5" title="Contact form 1"]'); ?>
-</div>
-</div>
-</div>
-<!-- END OF CONTACT SECTION -->
+
 
 			<?php endwhile; // end of the loop. ?>
 

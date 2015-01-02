@@ -10,6 +10,7 @@
 <html <?php language_attributes(); ?>>
 <head>
 <link href='http://fonts.googleapis.com/css?family=Lato:100,300|Roboto+Slab:300,400' rel='stylesheet' type='text/css'>    <!-- Add Google Fonts -->
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">	<!-- Add Font Awesome  -->
 <meta charset="<?php bloginfo( 'charset' ); ?>">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="profile" href="http://gmpg.org/xfn/11">
@@ -26,7 +27,7 @@
 	<div class="container-fluid">
 		<div class="row">
 			<nav id="site-navigation" class="main-navigation" role="navigation">
-			<button class="menu-toggle"><?php _e( 'M', 'Drip' ); ?></button>
+			<button class="menu-toggle"><?php _e( '<i class="fa fa-bars"></i>', 'Drip' ); ?></button>
 			<ul>
 				<li><h4><a class="nav_ghost_button" href="#home">Home</a></h4></li>
 				<li><h4><a class="nav_ghost_button" href="#services">Services</a></h4></li>
