@@ -23,19 +23,26 @@
 <div id="page" class="hfeed site">
 	<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'drip' ); ?></a>
 
-	<header id="masthead" class="site-header" role="banner">
-	<div class="container-fluid">
-		<div class="row">
-			<nav id="site-navigation" class="main-navigation" role="navigation">
-			<button class="menu-toggle"><?php _e( '<i class="fa fa-bars"></i>', 'Drip' ); ?></button>
-			<ul>
-				<li><h4><a class="nav_ghost_button" href="#home">Home</a></h4></li>
-				<li><h4><a class="nav_ghost_button" href="#services">Services</a></h4></li>
-				<li><h4><a class="nav_ghost_button" href="#about">About</a></h4></li>
-			</ul>
-			</nav><!-- #site-navigation -->
-		</div>
-	</div>
-	</header><!-- #masthead -->
+<header class="main_h">
+
+    <div class="container-fluid">
+        <a class="logo" href="#home"><img src="<?php the_field('logo_image'); ?>"</a>
+
+        <div class="mobile-toggle" href="#contact">
+            <i class="fa fa-bars fa-2x"></i>
+        </div>
+
+        <nav>
+            <ul>
+                <li><h6><a href="#home">Home</a></h6></li>
+                <li><h6><a href="#services">Services</a></h6></li>
+                <li><h6><a href="#about">About</a></h6></li>
+                <li><h6><a href="#contact">Contact</a></h6></li>
+            </ul>
+        </nav>
+
+    </div> <!-- / container -->
+
+</header>
 
 	<div id="content" class="site-content">

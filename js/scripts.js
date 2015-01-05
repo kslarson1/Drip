@@ -22,7 +22,7 @@ function resizeDiv() {
 $('.fixed_bg_home').css({'height': vph + 100 + 'px'});
 }
 
-// SMOOTH SCROLLING
+// Smooth Scrolling
 $(function() {
   $('a[href*=#]:not([href=#])').click(function() {
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {

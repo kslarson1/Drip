@@ -32,7 +32,7 @@ get_header(); ?>
 	<div class="container-fluid">
 	<div class="row">
 		<div class="col-xs-12 col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3 center">
-			<h3><?php the_field('home_subheader_1'); ?></h3>
+			<h2><?php the_field('home_subheader_1'); ?></h2>
 			<hr>
 			<p><?php the_field('home_text'); ?></p>
 		</div>
@@ -85,7 +85,7 @@ get_header(); ?>
 	</div>
 	<div class="row">
 		<div class="col-xs-12">
-			<a class="ghost_button" href="#about">Contact Me</a>
+			<a class="ghost_button" href="#contact">Contact Me</a>
 		</div>
 	</div>
 	</div>
@@ -112,12 +112,14 @@ get_header(); ?>
 	<div class="row">
 		<div class="col-xs-12 col-sm-5 col-sm-offset-6">
 			<h1><?php the_field('about_header'); ?></h1>
-			<h6><?php the_field('about_subheader'); ?></h6>
+			<p><?php the_field('about_subheader'); ?></p>
 		</div>
 	</div>
 	</div>
 	</div>
+
 	<!-- START OF SCROLLING BREAK SECTION -->
+
 	<div class="flat_bg_half1">
 	<div class="container-fluid">
 		<div class="row">
@@ -126,7 +128,7 @@ get_header(); ?>
 				</div>
 			</div>
 		</div>
-		<div class="col-xs-12">
+		<div class="col-xs-12 col-lg-10 col-lg-offset-1">
 			<div class="center">
 			<h2><?php the_field('list_header'); ?></h2>
 			<hr>
@@ -160,9 +162,11 @@ endif;
 		</div>
 	</div>
 	</div>
+</div>
 	<!-- END OF ABOUT HALF -->
 
 	<!-- START OF CONTACT HALF -->
+<div id="contact">
 	<div class="flat_bg_half2">
 	<div class="container-fluid">
 	<div class="row">
@@ -171,14 +175,12 @@ endif;
 		</div>
 	</div>
 	<div class="row">
-	<?php echo do_shortcode('[contact-form-7 id="5" title="Contact form 1"]'); ?>
+		<?php echo do_shortcode('[contact-form-7 id="5" title="Contact form 1"]'); ?>
 	</div>
 	</div>
 	</div>
 <!-- END OF CONTACT HALF -->
 </div>
-<!-- END OF ABOUT SECTION -->
-
 
 
 			<?php endwhile; // end of the loop. ?>
